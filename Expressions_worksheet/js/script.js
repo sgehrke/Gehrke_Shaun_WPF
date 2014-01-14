@@ -24,6 +24,20 @@ var weeksGroceries = [100, 200, 145, 125, 110];//This is an Array with amounts f
 const weeks = 5;//This line contains the number of weeks contained in the Array
 var weeklyTotal = weeksGroceries[0] + weeksGroceries[1] + weeksGroceries[2] + weeksGroceries[3] + weeksGroceries[4];//This line takes the values from the Array and adds together each index to create a sum
 var weeklyAverage = (weeklyTotal / weeks);//This line takes the sum of the weekly total and divides it by the number of weeks
-console.log("You have spent a total of $" + weeklyTotal + " on groceries over " + weeks + " weeks. That is an average of $" + weeklyAverage + " per week.");
+console.log("You have spent a total of $" + weeklyTotal + " on groceries over " + weeks + " weeks. That is an average of $" + weeklyAverage + " per week.");//Prints the required information
+
+//Discounts
+var item = "Coat"//Describes the item
+var originalPrice = 100;
+var discountRate = 20;
+var salesTaxRate = 5;
+var discountPercentage = (discountRate / 100);
+var salesTaxPercentage = (salesTaxRate / 100);
+var discount = (originalPrice * discountPercentage);
+var discountPrice = (originalPrice - discount);
+var salesTax = (discountPrice * salesTaxPercentage);
+var afterTax = (discountPrice - salesTax);
+console.log(discountPrice, afterTax);
+
 
 
