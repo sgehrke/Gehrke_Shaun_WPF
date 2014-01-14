@@ -35,4 +35,10 @@ a += 4;
 
 var a = 3;
 a ++ ;
-console.log(a + " feet");
+//console.log(a + " feet");
+
+var actualAge = 5;
+const dogYears = 7;
+var sparkyDogAge = (actualAge * dogYears);
+ 
+console.log("Sparky is " + actualAge + " human years old which is " + sparkyDogAge  + " in dog years.");
