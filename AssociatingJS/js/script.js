@@ -30,5 +30,9 @@ var phoneNo = "(" + String(areaCode) + ")" +  String(firstPart) + "-" + String(s
 //console.log(phoneNo);
 
 var a  = 3;
-a = a + 4;
-console.log(a);
+a += 4;
+//console.log(a);
+
+var a = 3;
+a ++ ;
+console.log(a + " feet");
