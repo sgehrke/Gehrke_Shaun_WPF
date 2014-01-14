@@ -28,16 +28,16 @@ console.log("You have spent a total of $" + weeklyTotal + " on groceries over " 
 
 //Discounts
 var item = "Coat"//Describes the item
-var originalPrice = 100;
-var discountRate = 20;
-var salesTaxRate = 5;
-var discountPercentage = (discountRate / 100);
-var salesTaxPercentage = (salesTaxRate / 100);
-var discount = (originalPrice * discountPercentage);
-var discountPrice = (originalPrice - discount);
-var salesTax = (discountPrice * salesTaxPercentage);
-var afterTax = (discountPrice - salesTax);
-console.log(discountPrice, afterTax);
+var originalPrice = 100;//This Line contains the items original price
+var discountRate = 20;//This is the discount percentage as a whole number
+var salesTaxRate = 5;//This is the sales tax number as a whole number
+var discountPercentage = (discountRate / 100);//This is the equation to convert the dicount into a percentage
+var salesTaxPercentage = (salesTaxRate / 100);//This is the equation to convert the sales tax into a percentage
+var discount = (originalPrice * discountPercentage);//This is the calculation to figure out the discount
+var discountPrice = (originalPrice - discount);//This line subtracts the original price and the discount
+var salesTax = (discountPrice * salesTaxPercentage);//This line calculates the sales tax on the discounted price
+var afterTax = (discountPrice - salesTax);//This line subtracts the sales tax from the discount price
+console.log("Your " + item + " was originally $" + originalPrice + ", but after a " + discountRate + "% discount, it is now $" + discountPrice + " without taxes, and $" + afterTax + " with tax.");//This line prints the results 
 
 
 
