@@ -8,9 +8,9 @@ var sparkyDogAge = (actualAge * dogYears);//An expression using variables to cal
 console.log("Sparky is " + actualAge + " human years old which is " + sparkyDogAge  + " in dog years.");
 
 //Slice of Pie part 1
-var pizzaSliceEach = 10;
-var numberStudents = 50;
-var numberPizzas = 30;
-var totalSlices = (pizzaSliceEach * numberPizzas);
-var result = (totalSlices / numberStudents);
-console.log("Each person ate " + result + " slices of pizza at the party");
+var pizzaSliceEach = 10;//This line describes the amount of slices per pizza
+var numberStudents = 50;//This line is set to the number of students eating the pizza
+var numberPizzas = 30;//This is the number of pizzas ordered
+var totalSlices = (pizzaSliceEach * numberPizzas);//This line will calculate the total number of slices available to all the students
+var result = (totalSlices / numberStudents);//This line is will calculate the nmber of slices each student will receive
+console.log("Each person ate " + result + " slices of pizza at the party");//This will print the String and the amount of slices each student ate
