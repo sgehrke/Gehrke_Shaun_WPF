@@ -36,7 +36,7 @@ var salesTaxPercentage = (salesTaxRate / 100);//This is the equation to convert 
 var discount = (originalPrice * discountPercentage);//This is the calculation to figure out the discount
 var discountPrice = (originalPrice - discount);//This line subtracts the original price and the discount
 var salesTax = (discountPrice * salesTaxPercentage);//This line calculates the sales tax on the discounted price
-var afterTax = (discountPrice - salesTax);//This line subtracts the sales tax from the discount price
+var afterTax = (discountPrice + salesTax);//This line Adds the sales tax to the discount price
 console.log("Your " + item + " was originally $" + originalPrice + ", but after a " + discountRate + "% discount, it is now $" + discountPrice + " without taxes, and $" + afterTax + " with tax.");//This line prints the results 
 
 
