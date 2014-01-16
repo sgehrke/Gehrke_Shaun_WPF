@@ -8,3 +8,4 @@ var picsPerMonth = picsPerDay * 4;//This will multiply the entered amount for pi
 var totalPics = picsPerMonth * monthsRemain;//This line will multiply the entered amount for picsPerMonth and remaining months
 var picsNeeded = targetPics - totalPics;//This line will calculate the amount of pictures needed to achieve goal
 if (totalPics > targetPics) {
+		alert("You are well on your way to your goal! If you stick to your plan you will have " + totalPics + " pictures to work with for your time lapse.")	
