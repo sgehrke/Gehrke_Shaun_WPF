@@ -7,10 +7,13 @@ var picsPerDay = prompt("How many pictures are you taking per session?");//This 
 var picsPerMonth = picsPerDay * timesPerWeek * 4;//This will multiply the entered amount for pictures per day by 4
 var totalPics = picsPerMonth * monthsRemain;//This line will multiply the entered amount for picsPerMonth and remaining months
 var picsNeeded = targetPics - totalPics;//This line will calculate the amount of pictures needed to achieve goal
-if (totalPics > targetPics) {
-		console.log(alert("You are well on your way to your goal! If you stick to your plan you will have " + totalPics + " pictures to work with for your time lapse."));	
+
+if (totalPics >= targetPics) {
+		alert("You are well on your way to your goal! If you stick to your plan you will have " + totalPics + " pictures to work with for your time lapse.");
+		console.log("You are well on your way to your goal! If you stick to your plan you will have " + totalPics + " pictures to work with for your time lapse.");//If the total amount of pictures is greater than or equal to their goal this will alert and then prompt
 } else {
-		console.log(alert("Looks like you are going to need to take more pictures to achieve your goal! You will only have " + totalPics + " pictures at this pace, which is " + picsNeeded + " short of your goal."));
+		alert("Looks like you are going to need to take more pictures to achieve your goal! You will only have " + totalPics + " pictures at this pace, which is " + picsNeeded + " short of your goal.");
+		console.log("Looks like you are going to need to take more pictures to achieve your goal! You will only have " + totalPics + " pictures at this pace, which is " + picsNeeded + " short of your goal.");//If the total amount of pictures is noy greater than or equal to their goal this will alert and then prompt
 }
 
 
