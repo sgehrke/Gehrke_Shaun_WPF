@@ -5,4 +5,4 @@ var targetPics = prompt("How many pictures are you aiming to take for the entire
 var timesPerWeek = prompt("How many times per week are you taking pictures?");////This will prompt the user to answer how many times per week they will be having a session
 var picsPerDay = prompt("How many pictures are you taking per session?");//This will prompt the user to enter how many pics per day they will be taking to be used later in a formula
 var picsPerMonth = picsPerDay * 4;//This will multiply the entered amount for pictures per day by 4
-var totalPics = picsPerMonth * monthsRemain;
+var totalPics = picsPerMonth * monthsRemain;//This line will multiply the entered amount for picsPerMonth and remaining months
