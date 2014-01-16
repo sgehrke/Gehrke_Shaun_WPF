@@ -4,11 +4,13 @@ var monthsRemain = 9 - monthsPrego;//This line will calculate the remaining mont
 var targetPics = prompt("How many pictures are you aiming to take for the entire project?");////This will prompt the user to answer how many pictures they want to end up with
 var timesPerWeek = prompt("How many times per week are you taking pictures?");////This will prompt the user to answer how many times per week they will be having a session
 var picsPerDay = prompt("How many pictures are you taking per session?");//This will prompt the user to enter how many pics per day they will be taking to be used later in a formula
-var picsPerMonth = picsPerDay * 4;//This will multiply the entered amount for pictures per day by 4
+var picsPerMonth = picsPerDay * timesPerWeek * 4;//This will multiply the entered amount for pictures per day by 4
 var totalPics = picsPerMonth * monthsRemain;//This line will multiply the entered amount for picsPerMonth and remaining months
 var picsNeeded = targetPics - totalPics;//This line will calculate the amount of pictures needed to achieve goal
 if (totalPics > targetPics) {
-		alert("You are well on your way to your goal! If you stick to your plan you will have " + totalPics + " pictures to work with for your time lapse.")	
+		console.log(alert("You are well on your way to your goal! If you stick to your plan you will have " + totalPics + " pictures to work with for your time lapse."));	
 } else {
-		alert("Looks like you are going to need to take more pictures to achieve your goal! You will only have " + totalPics + " pictures at this pace, which is " + picsNeeded + " short of your goal.")
+		console.log(alert("Looks like you are going to need to take more pictures to achieve your goal! You will only have " + totalPics + " pictures at this pace, which is " + picsNeeded + " short of your goal."));
 }
+
+
