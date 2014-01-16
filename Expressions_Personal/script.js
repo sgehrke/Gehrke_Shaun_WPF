@@ -7,3 +7,4 @@ var picsPerDay = prompt("How many pictures are you taking per session?");//This 
 var picsPerMonth = picsPerDay * 4;//This will multiply the entered amount for pictures per day by 4
 var totalPics = picsPerMonth * monthsRemain;//This line will multiply the entered amount for picsPerMonth and remaining months
 var picsNeeded = targetPics - totalPics;//This line will calculate the amount of pictures needed to achieve goal
+if (totalPics > targetPics) {
