@@ -9,3 +9,6 @@ var totalPics = picsPerMonth * monthsRemain;//This line will multiply the entere
 var picsNeeded = targetPics - totalPics;//This line will calculate the amount of pictures needed to achieve goal
 if (totalPics > targetPics) {
 		alert("You are well on your way to your goal! If you stick to your plan you will have " + totalPics + " pictures to work with for your time lapse.")	
+} else {
+		alert("Looks like you are going to need to take more pictures to achieve your goal! You will only have " + totalPics + " pictures at this pace, which is " + picsNeeded + " short of your goal.")
+}
