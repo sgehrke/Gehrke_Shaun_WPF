@@ -16,3 +16,4 @@ packageArray[0] = prompt("How many hours of Dj service do you require?");//This 
 packageArray[1] = packageArray[0] * DJRATE;//This array will multiply hours needed with the rate
 console.log(packageArray[1]);//This will print the dj total part to the console
 packageArray[2] = prompt("To put that elegant touch on your wedding we suggest adding accent lighting also known as up-lighting, to your venue. One light will cover a 20 foot area.\nHow many lights do you require?");//This will prompt the user asking how many light they require and store in array 2
+//console.log(packageArray[2]);//This will print to console the users amount entered
