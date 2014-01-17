@@ -10,6 +10,15 @@ var moneyYear = moneyWeek * 4 * 12;
 console.log(moneyYear);
 var monthsToMillion = 1000000 / moneyYear;
 console.log(monthsToMillion); 
-var yearsToMillion = monthsToMillion / 12;
+var yearsToMillion = (monthsToMillion)  / 12;
+var roundYear = Math.round(yearsToMillion);
+console.log(roundYear);
+var goal = yearsToMillion + age - retireAge;
+var roundGoal = Math.round(goal);
+if (roundGoal <= 0) {
+	alert("this")
+}
+console.log(goal);
+
 
 
