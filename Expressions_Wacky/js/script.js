@@ -9,5 +9,6 @@ var moneyWeek = prompt("How much money do you plan on putting aside per week for
 var moneyYear = moneyWeek * 4 * 12;
 console.log(moneyYear);
 var monthsToMillion = 1000000 / moneyYear;
- 
+console.log(monthsToMillion); 
+
 
