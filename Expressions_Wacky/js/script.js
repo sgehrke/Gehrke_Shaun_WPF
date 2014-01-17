@@ -16,11 +16,15 @@ console.log(roundYear);
 var goal = yearsToMillion + age - retireAge;
 var roundGoal = Math.round(goal);
 console.log(roundGoal);
+
 if (roundGoal <= 0) {
 	var roundGoal = Math.abs(roundGoal);
-	alert("This")
+	console.log(roundGoal);
+	var goaReached = retireAge - roundGoal;
+	
+	alert("Congratulations, you will be a millionaire" + roundGoal + " before your goal")
 } else {
-	alert("That")
+	alert("That");
 }
 
 
