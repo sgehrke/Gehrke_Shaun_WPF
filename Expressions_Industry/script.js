@@ -8,5 +8,6 @@ const LIGHTRATE = 30;//This is a constant that will be used in the total formula
 var weddingMonth = prompt("What month are you getting married?");//This line will start a string that will be the entire wedding date
 var weddingDate = prompt("What is the date of the wedding");//This line will prompt the user for their date…This should be a number
 var weddingYear = prompt("What year is your wedding?");//This will prompt the user to add the year of their wedding
+var weddingDateString =  weddingMonth + " " + weddingDate + ", " + weddingYear;//This var will concatenate the above variables into one string
 
 
