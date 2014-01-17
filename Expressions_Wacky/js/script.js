@@ -10,5 +10,6 @@ var moneyYear = moneyWeek * 4 * 12;
 console.log(moneyYear);
 var monthsToMillion = 1000000 / moneyYear;
 console.log(monthsToMillion); 
+var yearsToMillion = monthsToMillion / 12;
 
 
