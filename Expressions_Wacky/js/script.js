@@ -20,11 +20,11 @@ console.log(roundGoal);
 if (roundGoal <= 0) {
 	var roundGoal = Math.abs(roundGoal);
 	console.log(roundGoal);
-	var goaReached = retireAge - roundGoal;
-	
-	alert("Congratulations, you will be a millionaire" + roundGoal + " before your goal")
+	var goalReachedAge = retireAge - roundGoal;
+	console.log(goalReachedAge);
+	alert("Congratulations, you will retire a millionaire at age " + goalReachedAge + ", which is " + roundGoal + " year\(s\) before your goal!")
 } else {
-	alert("That");
+	alert("That not going to cut it. You won't be able to retire a millionaire until you are AGE, at the rate you are saving");
 }
 
 
