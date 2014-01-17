@@ -12,4 +12,6 @@ var weddingDateString =  weddingMonth + " " + weddingDate + ", " + weddingYear;/
 console.log(weddingDateString);//This will print to the console with the what the wedding date is together
 
 var packageArray = [];//This line creates a container for the documents variables
+packageArray[0] = prompt("How many hours of Dj service do you require?");//This array will store in the 0 index and be used in a later calculation
+
 
