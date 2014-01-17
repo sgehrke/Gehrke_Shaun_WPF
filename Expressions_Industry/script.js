@@ -5,5 +5,6 @@ const BOOTHPRICE = 175;//This is a constant that will be used in the total formu
 const DJRATE = 150; //This is a constant that will be used in the total formula
 const LIGHTRATE = 30;//This is a constant that will be used in the total formula
 
+var weddingMonth = prompt("What month are you getting married?");//This line will start a string that will be the entire wedding date
 
 
