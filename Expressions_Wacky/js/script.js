@@ -15,8 +15,14 @@ var roundYear = Math.round(yearsToMillion);
 console.log(roundYear);
 var goal = yearsToMillion + age - retireAge;
 var roundGoal = Math.round(goal);
-if (roundGoal <= 0); 
-console.log(goal);
+console.log(roundGoal);
+if (roundGoal <= 0) {
+	var roundGoal = Math.abs(roundGoal);
+	alert("This")
+} else {
+	alert("That")
+}
+
 
 
 
