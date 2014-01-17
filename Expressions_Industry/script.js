@@ -22,3 +22,7 @@ if (isNaN(packageArray[2])) { //This is a fail safe in case the user puts in a w
 	alert("You have entered an invalid number, there will be no lights added to your package.");//Here the will be alerted that a mistake has occured and that there will be no lights added to their package
 }
 packageArray[3] = LIGHTRATE * Number(packageArray[2]);//This is the calculation per light for the uplighting - there is also a failsafe here with Number()
+console.log(packageArray[3]);//This will print the results of array 3 in the console
+packageArray[4] = prompt("Would you like to add a photo booth to your event?");//this will prompt the user to see if they want a photo booth
+
+
