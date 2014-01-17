@@ -6,8 +6,8 @@ var yearBorn = prompt(retireAge + ", That's a great goal!\nNow, let's see how re
 var age = 2014 - yearBorn;//calculates their age
 console.log(age);//prints their age to the console
 var moneyWeek = prompt("How much money do you plan on putting aside per week for your million dollar retirement fund?");//This line prompts the user to see how much money they will be saving
-var moneyYear = moneyWeek * 4 * 12;
-console.log(moneyYear);
+var moneyYear = moneyWeek * 4 * 12;//Calculation for the money per year
+console.log(moneyYear);//prints the amount accumulated in a year
 var monthsToMillion = 1000000 / moneyYear;
 console.log(monthsToMillion); 
 var yearsToMillion = (monthsToMillion)  / 12;
