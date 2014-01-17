@@ -11,4 +11,5 @@ var weddingYear = prompt("What year is your wedding?");//This will prompt the us
 var weddingDateString =  weddingMonth + " " + weddingDate + ", " + weddingYear;//This var will concatenate the above variables into one string
 console.log(weddingDateString);//This will print to the console with the what the wedding date is together
 
+var packageArray = [];//This line creates a container for the documents variables
 
