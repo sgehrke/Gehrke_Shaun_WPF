@@ -20,4 +20,5 @@ packageArray[2] = prompt("To put that elegant touch on your wedding we suggest a
 if (isNaN(packageArray[2])) { //This is a fail safe in case the user puts in a word
 	packageArray[2] = 0;// if the user returns a word this will make it a 0
 	alert("You have entered an invalid number, there will be no lights added to your package.");//Here the will be alerted that a mistake has occured and that there will be no lights added to their package
-
+}
+packageArray[3] = LIGHTRATE * Number(packageArray[2]);//This is the calculation per light for the uplighting - there is also a failsafe here with Number()
