@@ -14,5 +14,5 @@ console.log(weddingDateString);//This will print to the console with the what th
 var packageArray = [];//This line creates a container for the documents variables
 packageArray[0] = prompt("How many hours of Dj service do you require?");//This array will store in the 0 index and be used in a later calculation
 packageArray[1] = packageArray[0] * DJRATE;//This array will multiply hours needed with the rate
-
+console.log(packageArray[1]);//This will print the dj total part to the console
 
