@@ -26,8 +26,8 @@ if (roundGoal <= 0) {
 } else {
 	var retireGoal = age + yearsToMillion;
 	var roundRetireGoal = Math.round(retireGoal);
-	console.log(retireGoal);
-	alert("That not going to cut it. You won't be able to retire a millionaire until you are AGE, at the rate you are saving.");
+	console.log(roundRetireGoal);
+	alert("That not going to cut it. You won't be able to retire a millionaire until you are " + roundRetireGoal + ", at the rate you are saving.");
 }
 
 
