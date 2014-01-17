@@ -24,5 +24,16 @@ if (isNaN(packageArray[2])) { //This is a fail safe in case the user puts in a w
 packageArray[3] = LIGHTRATE * Number(packageArray[2]);//This is the calculation per light for the uplighting - there is also a failsafe here with Number()
 console.log(packageArray[3]);//This will print the results of array 3 in the console
 packageArray[4] = prompt("Would you like to add a photo booth to your event?");//this will prompt the user to see if they want a photo booth
-
+if (packageArray[4].length >= 3) {//This array counts the letters in the users response to array 4 to determine whether they entered yes or no
+	packageArray[5] = prompt("How many hours would you like the booth for?");//This will appear only if they said yes to the above question
+	packageArray[6] = packageArray[5] * BOOTHPRICE;//This is the calculation for the photo booth
+	console.log(packageArray[6]);//This prints the photo booths total to the console
+	packageArray[7] = packageArray[1] + packageArray[3] + packageArray[6];//This array calculates the instant quote if all things are needed
+	console.log ("Your total estimate for your wedding on " + weddingDateString + " is $" + packageArray[7] + ".");//This will print to the console the final total
+	alert("The total estimate for your wedding on " + weddingDateString + " is $" + packageArray[7] + ", please call to lock in this price."); //This will alert the user as to their final total
+} else {
+	packageArray[8] = packageArray[1] + packageArray[3];//This array will only show if the user chose not to include a photobooth	
+	console.log("Your total estimate for your wedding on " + weddingDateString + " is $" + packageArray[8] + ".");//This is what will print to the console for the total estimate
+	alert("The total estimate for your wedding on " + weddingDateString + " is $" + packageArray[8] + ", please call to lock in this price.");//This is the alert to the user for the entire estimate
+}
 
