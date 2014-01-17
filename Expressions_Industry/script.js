@@ -9,5 +9,6 @@ var weddingMonth = prompt("What month are you getting married?");//This line wil
 var weddingDate = prompt("What is the date of the wedding");//This line will prompt the user for their date…This should be a number
 var weddingYear = prompt("What year is your wedding?");//This will prompt the user to add the year of their wedding
 var weddingDateString =  weddingMonth + " " + weddingDate + ", " + weddingYear;//This var will concatenate the above variables into one string
+console.log(weddingDateString);//This will print to the console with the what the wedding date is together
 
 
