@@ -24,7 +24,7 @@ switch (degrees) {
 }
 */
 //Celsius temp to convert
-var celsiusTemp = 32//This will prompt the user and the entered data will be used in this variable
+var celsiusTemp = prompt("What is the Celsius temperature you would like to convert to Fahrenheit?");//This will prompt the user and the entered data will be used in this variable
 //This is the conversion from celsius to fahrenheit
 var fahrenheitConversion = celsiusTemp *9 / 5 + 32;
 var fahrenheitConversion =  Math.round(fahrenheitConversion);//Rounds the converted temp to alert the user
@@ -36,7 +36,7 @@ alert("The teperature is " + fahrenheitConversion + "°F.")
 
 
 //Celsius temp to convert
-var fahrenheitTemp = 90//This will prompt the user and the entered data will be used in this variable
+var fahrenheitTemp = prompt("What is the Fahrenheit temperature you would like to convert to Celsius?")//This will prompt the user and the entered data will be used in this variable
 //This is the conversion from celsius to fahrenheit
 var celsiusConversion = (fahrenheitTemp -32) *5 / 9;
 var celsiusConversion = Math.round(celsiusConversion);//Rounds the converted temp to alert the user
