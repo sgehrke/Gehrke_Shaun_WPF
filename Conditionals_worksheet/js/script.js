@@ -6,9 +6,8 @@ var competitorWeight = 275;
 (competitorWeight > 250) ? console.log("The competitor qualifies for the heavyweight division.") : console.log("The comprtitor needs to gain some weight!");
 
 */
-
-
-
+/*
+//Group 1
 //Celsius to Fahrenheit converter
 var degrees = prompt("Are you converting to Celsius or Fehrenheit? Please use C for Celsius and F for Fahrenheit.");//This will prompt the user to which conversion is needed
 
@@ -41,7 +40,49 @@ if (degrees === "C") {//This will run if the value of degrees comes back as "C"
 }
 
 toDegrees();//This will call the function to run
+*/
+
+//Group 2 - Check the Login
+/*
+const USERNAME = "Walter"; 
+const PASSWORD = "White";
+console.log(USERNAME + " " + PASSWORD);
+
+alert("Your Username = Walter \nYour Password = White");
+var username = prompt("Enter your Username");
+var password = prompt("Enter your Password");
+console.log
+
+if ( (username === USERNAME) && (password === PASSWORD) ) {
+	alert("Welcome, " + USERNAME + "!");
+} else if ( username != USERNAME) {
+	alert("User not found. Try again.")
+} else { 
+	alert("Password does not match our records.");
+}
+*/
 
 
+//Group 3 - 
+const FULLTICKET = "$12";
+const DISCTICKET = "$7";
 
+var custAge = prompt("How old are you?")
+console.log(custAge);
+var movieTime = prompt("What time is your movie?");
+console.log(movieTime);
+
+if ( (custAge < 10) || (custAge > 55) ) {
+	alert("The ticket price is " + DISCTICKET);
+	console.log(custAge);
+} else if ( (movieTime >= 3) && (movieTime <= 5) ) {
+	alert("The ticket price is " + DISCTICKET);
+	console.log(movieTime)
+} else {
+	alert("The ticket price is " + FULLTICKET);
+	console.log(FULLTICKET)
+}
+
+
+console.log
 
