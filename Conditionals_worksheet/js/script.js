@@ -1,12 +1,12 @@
 //Shaun Gehrke, 01-20-14, Conditionals_worksheet
 //This worksheet will work through example problems for our web programming fundamentals class
 //Example Shut your face 1
-/*
+
 var competitorWeight = 275;
 (competitorWeight > 250) ? console.log("The competitor qualifies for the heavyweight division.") : console.log("The comprtitor needs to gain some weight!");
 
-*/
-/*
+
+
 //Group 1
 //Celsius to Fahrenheit converter
 var degrees = prompt("Are you converting to Celsius or Fehrenheit? Please use C for Celsius and F for Fahrenheit.");//This will prompt the user to which conversion is needed
@@ -40,49 +40,47 @@ if (degrees === "C") {//This will run if the value of degrees comes back as "C"
 }
 
 toDegrees();//This will call the function to run
-*/
+
 
 //Group 2 - Check the Login
-/*
-const USERNAME = "Walter"; 
-const PASSWORD = "White";
-console.log(USERNAME + " " + PASSWORD);
 
-alert("Your Username = Walter \nYour Password = White");
-var username = prompt("Enter your Username");
-var password = prompt("Enter your Password");
-console.log
+const USERNAME = "Walter";//The username the user must use
+const PASSWORD = "White";//The password the user must use
+console.log(USERNAME + " " + PASSWORD);//Prints both so I can see
+
+alert("Your Username = Walter \nYour Password = White");//Shows a pop-up to indicate the criteria that needs to be entered
+var username = prompt("Enter your Username")//Prompts the user to enter a username
+var password = prompt("Enter your Password");//Prompts the user to enter a password
 
 if ( (username === USERNAME) && (password === PASSWORD) ) {
-	alert("Welcome, " + USERNAME + "!");
+	alert("Welcome, " + USERNAME + "!");//Alerts the user only if the above is true
 } else if ( username != USERNAME) {
-	alert("User not found. Try again.")
+	alert("User not found. Try again.")//Alerts the user of error if invalid username is entered
 } else { 
-	alert("Password does not match our records.");
+	alert("Password does not match our records.");//If none of the above are true than the password must be invalid
 }
-*/
 
 
-//Group 3 - 
-const FULLTICKET = "$12";
-const DISCTICKET = "$7";
 
-var custAge = prompt("How old are you?")
-console.log(custAge);
-var movieTime = prompt("What time is your movie?");
-console.log(movieTime);
+//Group 3 - Movie Tickets
+const FULLTICKET = "$12";//The constant for full price tickets
+const DISCTICKET = "$7";//The constant for discounted tickets
+
+var custAge = prompt("How old are you?");//Prompts the user for their age
+console.log(custAge);//Prints their entered age
+var movieTime = prompt("What time is your movie?");//Prompts for their movie time
+console.log(movieTime);//Prints what they entered for movie time
 
 if ( (custAge < 10) || (custAge > 55) ) {
-	alert("The ticket price is " + DISCTICKET);
-	console.log(custAge);
+	alert("The ticket price is " + DISCTICKET);//Will alert the user only if the customers age is less than 10 or 55 and older
+	console.log(custAge);//Prints the sustomer age
 } else if ( (movieTime >= 3) && (movieTime <= 5) ) {
-	alert("The ticket price is " + DISCTICKET);
-	console.log(movieTime)
+	alert("The ticket price is " + DISCTICKET);//Alerts the user of their discounted ticket price
+	console.log(movieTime);
 } else {
-	alert("The ticket price is " + FULLTICKET);
-	console.log(FULLTICKET)
+	alert("The ticket price is " + FULLTICKET);//If no other statements are true then they wil receive this ticket price
+	console.log(FULLTICKET);
 }
 
 
-console.log
 
