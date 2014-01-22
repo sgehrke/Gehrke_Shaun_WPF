@@ -8,3 +8,10 @@ const ROUND72 = 121;//This is the square footage of a 72" table
 
 alert("The following calculator will allow you to find out what size venue will be needed to comfortably fit the guests at your wedding.");
 
+var numGuest = prompt("How many guests will be seated for dinner?");
+while ((numGuest === "") || (isNaN(numGuest))) {
+		console.log("While")
+		var numGuest = prompt("You have entered an invalid entry.\nPlease enter how many guests will be seated for dinner");
+}	
+
+console.log(numGuest);
