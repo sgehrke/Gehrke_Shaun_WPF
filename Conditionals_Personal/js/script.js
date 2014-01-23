@@ -10,34 +10,34 @@ while ((genre === "") || (isNaN(genre)) || (genre <1 || genre >5)) {
 genre = parseInt(genre);//This will turn the string into a number if they entered invalid info
 
 
-var hoursPlayed = prompt("How many hours did you spin for?");
+var hoursPlayed = prompt("How many hours did you spin for?");//Prompts the user as to how many hours they will perform
 
-if (genre >0 || genre <6){
+if (genre >0 || genre <6){//This if statement will only run if the condition inside the parethesis is true
 	switch (genre){
 		case 1: 
-			genre = bpmArray[0]
+			genre = bpmArray[0]//If the user answers 1 to the genre question the variable is directed to the information inside this array
 			break;
 		case 2: 
-			genre = bpmArray[1]
+			genre = bpmArray[1]//If the user answers 2 to the genre question the variable is directed to the information inside this array
 			break;
 		case 3: 
-			genre = bpmArray[2]
+			genre = bpmArray[2]//If the user answers 3 to the genre question the variable is directed to the information inside this array
 			break;
 		case 4: 
-			genre = bpmArray[3]
+			genre = bpmArray[3]//If the user answers 4 to the genre question the variable is directed to the information inside this array
 			break;
 		case 5: 
-			genre = bpmArray[4]
+			genre = bpmArray[4]//If the user answers 5 to the genre question the variable is directed to the information inside this array
 			break;		
 	}
 }
-console.log(genre)
+console.log(genre);//Prints the new value for genre to the console
 
 
 
-var beatsPerHour = (genre * 60);
-var bpmToday = (hoursPlayed * beatsPerHour);
+var beatsPerHour = (genre * 60);//This line will calculate the beats per hour
+var bpmToday = (hoursPlayed * beatsPerHour);//this line will calculate the beats per day
 
 (bpmToday < 15000) ? alert("You are well on your way to becoming a local club DJ. Your spinning " + bpmToday + " beats per day, and that is right where you need to be to practice and still enjoy it!") : alert("You are a needle junkie! You are spinning " + bpmToday + " beats per day. At this rate you will burn yourself out and live a sheltered life. Find a balance soon before it is to late!");
-console.log(bpmToday + " beats per day!")
+console.log(bpmToday + " beats per day!");//This is a ternary statement that condenses an if else statement
 
