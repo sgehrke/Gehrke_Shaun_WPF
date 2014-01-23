@@ -11,17 +11,19 @@ body {
 }
 
 @font-face {
-    font-family: "Pacifico";
-    src: url("../fonts/pacifico/Pacifico.ttf");
+    font-family: "Langdon";
+    src: url("../fonts/Langdon.otf");
 }
 
 h1, h2, h3{
-    font-family: Pacifico, arial;
+    font-family: Langdon, arial;
 	text-shadow: 1px 1px 1px white;
 }
 
 h1 {
+	font-size: 3.5em;
 	text-align: center;
+	color: #6fd3e5
 }
 
 h2 {
