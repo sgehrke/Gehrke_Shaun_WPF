@@ -15,15 +15,14 @@ body {
     src: url("../fonts/Franchise-Bold/Franchise-Bold.ttf ");
 }
 
-h1, h2, h3{
+h1, h2,{
     font-family: Franchise-Bold, arial;
-	text-shadow: 3px 1px 1px grey;
 }
 
 h1 {
 	font-size: 3.5em;
 	text-align: center;
-	color: #6fd3e5
+	color: #6fd3e5;
 }
 
 h2 {
