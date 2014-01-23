@@ -7,17 +7,17 @@ Copyright 2013, Josh Cope
 
 body {
 	background: 
-		url("../images/bg-texture_image.jpg");
+		url("../images/black_bg.png");
 }
 
 @font-face {
-    font-family: "Langdon";
-    src: url("../fonts/Langdon.otf");
+    font-family: "Franchise-Bold";
+    src: url("../fonts/Franchise-Bold/Franchise-Bold.ttf ");
 }
 
 h1, h2, h3{
-    font-family: Langdon, arial;
-	text-shadow: 1px 1px 1px white;
+    font-family: Franchise-Bold, arial;
+	text-shadow: 3px 1px 1px grey;
 }
 
 h1 {
@@ -31,17 +31,12 @@ h2 {
 	text-align: center;
 	text-decoration: underline;
 	margin: 10px;
-}
-
-h3 {
-	font-size: 1.5em;
-	margin: 10px;
-	text-align: center;
-	text-decoration: underline;
+	color:#acddf7
 }
 
 p {
 	font-family: oriya MN, arial;
+	color: white;
 	padding: 10px 0 20px 0;
 	margin: 0 auto;
 	text-align: center;
