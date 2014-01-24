@@ -39,7 +39,7 @@ console.log(mealNum);
 
 var drinkChoice = prompt("What would you like to drink?\n1) Coffee\n2) Orange Juice\n3) Soft drink\n4) Bottle water");
 
-var drinkArray = [1.10, 1.69, 1.29, 1.00];
+var drinkArray = [1.00, 1.69, 1.29, 1.00];
 
 drinkChoice = parseInt(drinkChoice);
 switch (drinkChoice) {
@@ -59,4 +59,46 @@ switch (drinkChoice) {
 console.log(drinkChoice);
 
 var foodTotal = mealNum + drinkChoice;
+foodTotal = parseFloat(foodTotal);
+foodTotal = foodTotal.toFixed(2)
 console.log(foodTotal);
+
+alert("Your total is $" + foodTotal)
+
+
+/*
+var delivery = prompt("So now comes the interesting part!!!\nHow much are you willing to pay for the convenience of breakfast delivered to you without having to get out of bed?");
+delivery = parseInt(delivery);
+
+
+
+if (delivery < 11) {
+	delivery = prompt("Ya! Unless you would like to pay a bit more it looks like you will be getting out of bed after all.\nSo how much are you really willing to pay for breakfast in bed?");
+} else {
+	alert()
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
