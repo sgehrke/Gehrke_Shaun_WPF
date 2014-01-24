@@ -5,6 +5,10 @@ alert("Have you ever wanted your favorite McDonald's Breakfast meal, but were ju
 
 var mealNum = prompt("Welcome to your online order form for your breakfast delivery.\nWhich breakfast meal would you like for your breakfast in bed?\n1) Egg McMuffin\n2) Sausage McMuffin with Egg\n3) Bacon, Egg & Cheese Biscuit\n4) Sausage Biscuit with Egg\n5) Bacon Egg & Cheese Mcgriddle\n6) Saugage, Egg & Cheese McGriddle\n7) Sausage McGriddle\n8) Sausage Burrito (2)");
 
+while (mealNum === "" || (isNaN(mealNum)) || mealNum <= 0 || mealNum >8){
+	var mealNum = prompt("You have entered an invalid response.\nPlease choose a breakfast meal would you like to be delivered?\n1) Egg McMuffin\n2) Sausage McMuffin with Egg\n3) Bacon, Egg & Cheese Biscuit\n4) Sausage Biscuit with Egg\n5) Bacon Egg & Cheese Mcgriddle\n6) Saugage, Egg & Cheese McGriddle\n7) Sausage McGriddle\n8) Sausage Burrito (2)");
+}
+
 var mealNumArray = [3.99, 3.99, 4.19, 3.89, 4.39, 4.39, 3.89, 3.79, ]
 
 mealNum = parseInt(mealNum);
@@ -40,8 +44,11 @@ console.log(mealNum);
 var drinkChoice = prompt("What would you like to drink?\n1) Coffee\n2) Orange Juice\n3) Soft drink\n4) Bottle water");
 
 var drinkArray = [1.00, 1.69, 1.29, 1.00];
-
 drinkChoice = parseInt(drinkChoice);
+while (drinkChoice === "" || (isNaN(drinkChoice)) || drinkChoice <= 0 || drinkChoice >4){
+	drinkChoice = prompt("You have entered an invalid responce.\nPlease enter the type of drink you would like.\n1) Coffee\n2) Orange Juice\n3) Soft drink\n4) Bottle water");
+}
+
 switch (drinkChoice) {
 	case 1: 
 		drinkChoice = drinkArray[0];//Coffee
@@ -59,14 +66,15 @@ switch (drinkChoice) {
 console.log(drinkChoice);
 
 var foodTotal = mealNum + drinkChoice;
+foodTotal = foodTotal.toFixed(2);
 foodTotal = parseFloat(foodTotal);
-foodTotal = foodTotal.toFixed(2)
+
 console.log(foodTotal);
 
 alert("Your total is $" + foodTotal)
 
 
-/*
+
 var delivery = prompt("So now comes the interesting part!!!\nHow much are you willing to pay for the convenience of breakfast delivered to you without having to get out of bed?");
 delivery = parseInt(delivery);
 
@@ -75,10 +83,10 @@ delivery = parseInt(delivery);
 if (delivery < 11) {
 	delivery = prompt("Ya! Unless you would like to pay a bit more it looks like you will be getting out of bed after all.\nSo how much are you really willing to pay for breakfast in bed?");
 } else {
-	alert()
+	var deliveryTotal = foodTotal + delivery;
+	alert("Sounds good! Your total with delivery is $" + deliveryTotal + ". See you in the morning, and remeber tips are appreciated!")
 }
 
-*/
 
 
 
