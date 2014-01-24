@@ -1,7 +1,7 @@
 //Shaun Gehrke, 01-23-14, Conditionals_Wacky
 //This calculator will run a total for your favorite value meal delivered
 alert
-alert("Have you ever wanted your favorite McDonald's Breakfast meal, but were just to lazy to get out of bed?\nWell, now you have an option for delivery (for a small fee.)");
+alert("Have you ever wanted your favorite McDonald's Breakfast meal, but were just to lazy to get out of bed?\nWell, now you have an option for delivery (for a small fee of course.)");
 
 var mealNum = prompt("Welcome to your online order form for your breakfast delivery.\nWhich breakfast meal would you like for your breakfast in bed?\n1) Egg McMuffin\n2) Sausage McMuffin with Egg\n3) Bacon, Egg & Cheese Biscuit\n4) Sausage Biscuit with Egg\n5) Bacon Egg & Cheese Mcgriddle\n6) Saugage, Egg & Cheese McGriddle\n7) Sausage McGriddle\n8) Sausage Burrito (2)");
 
@@ -36,16 +36,27 @@ switch (mealNum) {
 }
 console.log(mealNum);
 
-var drinkArray = []
-var drinkChoice = prompt("What would you like to drink?\n1) Cofee\n2) Orange Juice\n3) Soda\n4) Bottle water");
 
+var drinkChoice = prompt("What would you like to drink?\n1) Coffee\n2) Orange Juice\n3) Soft drink\n4) Bottle water");
+
+var drinkArray = [1.10, 1.69, 1.29, 1.00];
+
+drinkChoice = parseInt(drinkChoice);
 switch (drinkChoice) {
 	case 1: 
-		drinkChoice = drinkArray[0];//Egg McMuffin
+		drinkChoice = drinkArray[0];//Coffee
+		break;
 	case 2: 
-		drinkChoice = drinkArray[1];//Sausage McMuffin with Egg
+		drinkChoice = drinkArray[1];//Orange Juice
+		break;
 	case 3: 
-		drinkChoice = drinkArray[2];//Bacon, Egg & Cheese Biscuit
+		drinkChoice = drinkArray[2];//Soda
+		break;
 	case 4: 
-		drinkChoice = drinkArray[3];//Sausage Biscuit with Egg
+		drinkChoice = drinkArray[3];//Water
+		break;
 }
+console.log(drinkChoice);
+
+var foodTotal = mealNum + drinkChoice;
+console.log(foodTotal);
