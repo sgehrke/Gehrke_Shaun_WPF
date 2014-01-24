@@ -36,7 +36,8 @@ h2 {
 	text-align: center;
 	text-decoration: underline;
 	margin: 10px;
-	color:#acddf7
+	color:#fff132;
+	text-shadow: 1px 1px 1px grey;
 }
 
 p {
