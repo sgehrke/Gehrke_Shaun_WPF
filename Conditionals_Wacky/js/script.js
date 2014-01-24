@@ -5,9 +5,9 @@ alert("Have you ever wanted your favorite McDonald's Breakfast meal, but were ju
 
 var mealNum = prompt("Welcome to your online order form for your breakfast delivery.\nWhich breakfast meal would you like for your breakfast in bed?\n1) Egg McMuffin\n2) Sausage McMuffin with Egg\n3) Bacon, Egg & Cheese Biscuit\n4) Sausage Biscuit with Egg\n5) Bacon Egg & Cheese Mcgriddle\n6) Saugage, Egg & Cheese McGriddle\n7) Sausage McGriddle\n8) Sausage Burrito (2)");//Asks the user what meal they will choose to have delivered
 
-while (mealNum === "" || (isNaN(mealNum)) || mealNum <= 0 || mealNum >8){
+while (mealNum === "" || (isNaN(mealNum)) || mealNum <= 0 || mealNum >8){//only under these conditions will the while statement run 
 	var mealNum = prompt("You have entered an invalid response.\nPlease choose a breakfast meal would you like to be delivered?\n1) Egg McMuffin\n2) Sausage McMuffin with Egg\n3) Bacon, Egg & Cheese Biscuit\n4) Sausage Biscuit with Egg\n5) Bacon Egg & Cheese Mcgriddle\n6) Saugage, Egg & Cheese McGriddle\n7) Sausage McGriddle\n8) Sausage Burrito (2)");
-}
+}//This is the prompt that happens if the user enters invalid info - it will run until they enter valid
 
 var mealNumArray = [3.99, 3.99, 4.19, 3.89, 4.39, 4.39, 3.89, 3.79, ]
 
