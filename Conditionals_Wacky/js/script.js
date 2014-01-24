@@ -1,9 +1,9 @@
 //Shaun Gehrke, 01-23-14, Conditionals_Wacky
 //This calculator will run a total for your favorite value meal delivered
 alert
-alert("Have you ever wanted your favorite McDonald's Breakfast meal, but were just to lazy to get out of bed?\nWell, now you have an option for delivery (for a small fee of course.)");
+alert("Have you ever wanted your favorite McDonald's Breakfast meal, but were just to lazy to get out of bed?\nWell, now you have an option for delivery (for a small fee of course.)");//this is the opening alert to tell the user what the program does
 
-var mealNum = prompt("Welcome to your online order form for your breakfast delivery.\nWhich breakfast meal would you like for your breakfast in bed?\n1) Egg McMuffin\n2) Sausage McMuffin with Egg\n3) Bacon, Egg & Cheese Biscuit\n4) Sausage Biscuit with Egg\n5) Bacon Egg & Cheese Mcgriddle\n6) Saugage, Egg & Cheese McGriddle\n7) Sausage McGriddle\n8) Sausage Burrito (2)");
+var mealNum = prompt("Welcome to your online order form for your breakfast delivery.\nWhich breakfast meal would you like for your breakfast in bed?\n1) Egg McMuffin\n2) Sausage McMuffin with Egg\n3) Bacon, Egg & Cheese Biscuit\n4) Sausage Biscuit with Egg\n5) Bacon Egg & Cheese Mcgriddle\n6) Saugage, Egg & Cheese McGriddle\n7) Sausage McGriddle\n8) Sausage Burrito (2)");//Asks the user what meal they will choose to have delivered
 
 while (mealNum === "" || (isNaN(mealNum)) || mealNum <= 0 || mealNum >8){
 	var mealNum = prompt("You have entered an invalid response.\nPlease choose a breakfast meal would you like to be delivered?\n1) Egg McMuffin\n2) Sausage McMuffin with Egg\n3) Bacon, Egg & Cheese Biscuit\n4) Sausage Biscuit with Egg\n5) Bacon Egg & Cheese Mcgriddle\n6) Saugage, Egg & Cheese McGriddle\n7) Sausage McGriddle\n8) Sausage Burrito (2)");
