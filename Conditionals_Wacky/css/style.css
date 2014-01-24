@@ -7,7 +7,7 @@ Copyright 2013, Josh Cope
 
 body {
 	background: 
-	url("../images/bg_hallway.jpg") no-repeat center center fixed; 
+	url(../images/mc_bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -24,7 +24,7 @@ h1, h2,{
 }
 
 h1 {
-	font-size: 15em;
+	font-size: 10em;
 	text-align: center;
 	color: white;
 }
