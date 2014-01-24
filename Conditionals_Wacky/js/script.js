@@ -78,15 +78,20 @@ alert("Your total is $" + foodTotal)
 var delivery = prompt("So now comes the interesting part!!!\nHow much are you willing to pay for the convenience of breakfast delivered to you without having to get out of bed?");
 delivery = parseInt(delivery);
 
-
-
+while (delivery === "" || (isNaN(delivery))){
+	delivery = prompt("You have entered n invalid responce.\nPlease enter the amount you are willing to pay for delivery.")
+}
 if (delivery < 11) {
 	delivery = prompt("Ya! Unless you would like to pay a bit more it looks like you will be getting out of bed after all.\nSo how much are you really willing to pay for breakfast in bed?");
-} else {
+} 
+if (delivery >10) {
 	var deliveryTotal = foodTotal + delivery;
 	alert("Sounds good! Your total with delivery is $" + deliveryTotal + ". See you in the morning, and remeber tips are appreciated!")
 }
-
+if (delivery <11) {
+	var deliveryTotal = foodTotal + delivery;
+	alert("I'm sorry we couln't do business. Have fun starving in bed!");
+} 
 
 
 
