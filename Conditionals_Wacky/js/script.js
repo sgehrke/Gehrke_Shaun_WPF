@@ -9,9 +9,9 @@ while (mealNum === "" || (isNaN(mealNum)) || mealNum <= 0 || mealNum >8){//only 
 	var mealNum = prompt("You have entered an invalid response.\nPlease choose a breakfast meal would you like to be delivered?\n1) Egg McMuffin\n2) Sausage McMuffin with Egg\n3) Bacon, Egg & Cheese Biscuit\n4) Sausage Biscuit with Egg\n5) Bacon Egg & Cheese Mcgriddle\n6) Saugage, Egg & Cheese McGriddle\n7) Sausage McGriddle\n8) Sausage Burrito (2)");
 }//This is the prompt that happens if the user enters invalid info - it will run until they enter valid
 
-var mealNumArray = [3.99, 3.99, 4.19, 3.89, 4.39, 4.39, 3.89, 3.79, ]
+var mealNumArray = [3.99, 3.99, 4.19, 3.89, 4.39, 4.39, 3.89, 3.79, ]//This is an array containing all the prices of the meals
 
-mealNum = parseInt(mealNum);
+mealNum = parseInt(mealNum);//this turns a string into a number
 switch (mealNum) {
 	case 1: 
 		mealNum = mealNumArray[0];//Egg McMuffin
@@ -38,10 +38,10 @@ switch (mealNum) {
 		mealNum = mealNumArray[7];//Sausage Burrito (2)
 		break;
 }
-console.log(mealNum);
+console.log(mealNum);//This will print to the console so the programmer can see the result
 
 
-var drinkChoice = prompt("What would you like to drink?\n1) Coffee\n2) Orange Juice\n3) Soft drink\n4) Bottle water");
+var drinkChoice = prompt("What would you like to drink?\n1) Coffee\n2) Orange Juice\n3) Soft drink\n4) Bottle water");//creates a variable called drinkChoice with the info that is entered from the user
 
 var drinkArray = [1.00, 1.69, 1.29, 1.00];
 
