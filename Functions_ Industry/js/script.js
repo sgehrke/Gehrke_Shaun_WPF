@@ -25,7 +25,7 @@ if (siteType === "1"){
 	siteType = 75;
 }
 
-var webPages = prompt("How many pages does you site require?");
+var webPages = prompt("How many pages does your site require?");
 console.log(webPages);
 webPagesCost = Number(webPages) * Number(siteType);
 console.log(webPagesCost);
@@ -73,5 +73,9 @@ console.log(cost);
 
 
 alert("The estimate to create " + compName + "'s site would be $" + cost + ". Feel free to check out the competition. We have the lowest prices around.");
+
+
+
+
 
 

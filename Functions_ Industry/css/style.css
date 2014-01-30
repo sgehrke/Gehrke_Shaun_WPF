@@ -6,12 +6,7 @@ Copyright 2013, Josh Cope
 /* ===============Site Styles=============================== */
 
 body {
-	background: 
-	url("../images/bg_hallway.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background: black;
 }
 
 @font-face {
@@ -24,28 +19,39 @@ h1, h2,{
 }
 
 h1 {
-	font-size: 15em;
+	height: 600px;
+	position: fixed;
+	font-size: 1000%;
 	text-align: center;
 	color: white;
+	z-index: 1;
 }
 
 h2 {
+	position: relative;
+	top: 600px;
 	background: white;
 	font-size: 10em;
 	width: 100%;
 	text-align: center;
 	text-decoration: underline;
 	margin: 10px;
-	color:#acddf7
+	color:#acddf7;
+	z-index: 2;
+
 }
 
 p {
+	background: blue;
+	position: relative;
+	top: 600px;
 	font-family: oriya MN, arial;
 	font-size: 5em;
 	color: white;
 	padding: 10px 0 20px 0;
 	margin: 0 auto;
 	text-align: center;
+	z-index: 3;
 }
 
 
