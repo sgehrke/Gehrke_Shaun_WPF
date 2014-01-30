@@ -39,6 +39,40 @@ var commonGirlName = ["Anna", "Bridget", "Elenor", "Faith", "Jane", "Lucy", "Ros
 var randomNameNum = numgen(extBoyName);
 console.log(randomNameNum);
 
+function numgen(b) {
+	var randNum = Math.floor((Math.random() * b.length) + 1);
+	var randName="";
+	console.log(b);	
+	switch (randNum){
+		case 1: 
+			randName = b[0];
+			break;
+		case 2: 
+			randName = b[1];
+			break;	
+		case 3: 
+			randName = b[2];
+			break;	
+		case 4: 
+			randName = b[3];
+			break;	
+		case 5: 
+			randName = b[4];
+			break;	
+		case 6: 
+			randName = b[5];
+			break;	
+		case 7: 
+			randName = b[6];
+			break;	
+		case 8: 
+			randName = b[7];
+			break;
+			
+	}
+	return randName;
+	
+}
 
 
 
