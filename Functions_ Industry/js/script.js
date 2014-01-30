@@ -25,7 +25,22 @@ if (siteType === "1"){
 	siteType = 75;
 }
 
+var webPages = prompt("How many pages does you site require?");
+console.log(webPages);
+webPagesCost = Number(webPages) * Number(siteType);
+console.log(webPagesCost);
 
+myArray[0] = webPagesCost;
+
+var emailAcc = prompt("How many email accounts are required?");
+while (emailAcc === "" || (isNaN(emailAcc))){
+	emailAcc = prompt("You must enter a valid number.\nHow many email accounts do you require?");
+}
+
+emailAccTotal = emailAcc * EMAILCOST;
+console.log(emailAccTotal);
+
+myArray[1] = emailAccTotal;
 
 
 
