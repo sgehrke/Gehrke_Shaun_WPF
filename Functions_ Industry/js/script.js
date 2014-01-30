@@ -59,5 +59,19 @@ myArray[2] = custContentTotal;
 
 console.log(myArray);
 
+var cost = costEst(myArray[0], myArray[1], myArray[2]);
+console.log(cost);
+
+function costEst(a, b, c){
+	var cost = a + b + c;
+	return cost;
+}
+
+costEst(myArray[0], myArray[1], myArray[2]);
+
+console.log(cost);
+
+
+alert("The estimate to create " + compName + "'s site would be $" + cost + ". Feel free to check out the competition. We have the lowest prices around.");
 
 
