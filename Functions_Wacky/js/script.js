@@ -28,3 +28,10 @@ var goats = parseInt(goats);
 console.log(goats);
 
 
+
+if (goats <1){
+	goats = 1;
+	alert("You either have the worlds smallest lawn, or are giving the goat to much time. Either way " + goats + " goat will do the job!");
+} else {
+	alert("Well, get out your pocket book cause in order to get your lawn cut in " + timeNeeded + " hour(s), you will need to buy " + goats + " goat(s)!");	
+}
