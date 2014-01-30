@@ -75,5 +75,27 @@ function numgen(b) {
 }
 
 
+if (genderNum === "boy1"){
+	var randomNameNum = numgen(commonBoyName);
+	console.log(randomNameNum);
+	
+} 
+
+if (genderNum === "boy2"){
+	var randomNameNum = numgen(extBoyName);
+	console.log(randomNameNum);
+}
+if (genderNum === "girl1"){
+	var randomNameNum = numgen(commonGirlName);
+	console.log(randomNameNum);
+}
+if (genderNum === "girl2"){
+	var randomNameNum = numgen(extGirlName);
+	console.log(randomNameNum);
+}
+
+alert(randomNameNum);
+
+
 
 
