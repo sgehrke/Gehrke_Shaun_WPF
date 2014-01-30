@@ -42,7 +42,22 @@ console.log(emailAccTotal);
 
 myArray[1] = emailAccTotal;
 
+var custContent = prompt("Will you be supplying the content?");
+//If yes proceed if else prompt additional
+console.log(custContent);
+//convert to all lower case
+custContent = custContent.toLowerCase();
+console.log(custContent);
+while (custContent === "" || (!isNaN(custContent)) || custContent != "yes" && custContent != "no") {
+	custContent = prompt("Please enter yes or no. Will you be supplying content for the website?");
+}
 
+(custContent === "yes") ? alert("Great, that will save us some time and you some money!") : alert("That's gonna add to the cost of the project."); custContentTotal = 200 * webPages ;
+
+myArray[2] = custContentTotal;
+
+
+console.log(myArray);
 
 
 
