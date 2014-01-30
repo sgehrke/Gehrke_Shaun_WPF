@@ -94,7 +94,7 @@ if (genderNum === "girl2"){
 	console.log(randomNameNum);
 }
 
-alert(randomNameNum);
+alert("Our suggested name is \"" + randomNameNum + "\". If that name is not to your liking, feel free to refresh the page and generate a new name.");
 
 
 
