@@ -51,11 +51,9 @@ var commonBoyName = ["Bruce", "Dennis", "Harry", "Jesse", "Ken", "Kurt", "Luke",
 //This is the common girl name array
 var commonGirlName = ["Anna", "Bridget", "Elenor", "Faith", "Jane", "Lucy", "Rose", "Stella"];
 
-//This store where the functions return
-var randomNameNum = numgen(extBoyName);
-console.log(randomNameNum);
-//This declares a function with b as the perameters
-function numgen(b) {
+
+//This declares an anonymous function with b as the perameters
+var numgen = function(b) {
 	//This generates a random number
 	var randNum = Math.floor((Math.random() * b.length) + 1);
 	//This makes room for the name to be stored
