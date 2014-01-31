@@ -7,7 +7,7 @@ Copyright 2013, Josh Cope
 
 body {
 	background: 
-	url("../images/bg_hallway.jpg") no-repeat center center fixed; 
+	 url(../images/GrassCarpet.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -35,15 +35,13 @@ h2 {
 	width: 100%;
 	text-align: center;
 	text-decoration: underline;
-	margin: 10px;
-	color:#acddf7
+	color:#acddf7;
 }
 
 p {
 	font-family: oriya MN, arial;
 	font-size: 5em;
 	color: white;
-	padding: 10px 0 20px 0;
 	margin: 0 auto;
 	text-align: center;
 }
